@@ -1,0 +1,12 @@
+
+{ 
+  // Usa Source Code Pro come font primario per il codice
+  "editor.fontFamily": "'Source Code Pro', Consolas, 'Courier New', monospace",
+
+  // Aumenta un po' la dimensione se necessario
+  "editor.fontSize": 15,
+
+  // Abilita le legature se ti piacciono (Source Code Pro le supporta)
+  "editor.fontLigatures": true
+
+}
