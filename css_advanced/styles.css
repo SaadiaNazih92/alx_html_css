@@ -7,14 +7,207 @@
 }
 
 body {
+  background-image: url(./images/Object.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /*
    * QUESTA È LA REGOLA PRINCIPALE CHE CERCAVI
    * Tutti i paragrafi e gli altri testi ora useranno questo font di default.
   */
   font-family: 'Source Sans Pro Regular', sans-serif;
   /* Puoi aggiungere anche altri stili di base qui */
-  color: #333; /* Un colore di testo standard più morbido del nero puro */
+  color: #0a0a0a; /* Un colore di testo standard più morbido del nero puro */
   line-height: 1.6; /* Aumenta lo spazio tra le righe per una migliore leggibilità */
   margin: 0;
   padding: 0;
+}
+
+nav {
+  background-color: transparent;
+  display: flex; /* 1. Attiva la modalità Flexbox */
+  
+  justify-content: space-around; /* 2. Spinge il logo a sx e la lista a dx */
+
+  align-items: center; /* 3. Allinea tutto al centro in verticale */
+padding: 20px;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  gap: 25px;
+  
+  
+}
+ul li {
+  float: right;
+}
+ul li a{
+  display: block;
+  color: #0a0a0a;
+  text-align: right;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-family: 'Source Sans Pro black', sans-serif;
+  font-size: 12px;
+  color: #fcf9f9;
+  
+  
+}
+.logo img {
+  height: 35px; /* Imposta un'altezza per il logo */
+  
+}
+ul li:hover{
+  background-color: #575757;
+}
+
+ .sec1 .div1{
+  background-color: transparent;
+  display: flex; /* 1. Attiva la modalità Flexbox */
+  
+  justify-content: center; /* 2. Spinge il logo a sx e la lista a dx */
+
+  align-items: center; /* 3. Allinea tutto al centro in verticale */
+
+}
+
+
+.div1{
+  display: block;
+  color: #0a0a0a;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Source Sans Pro black', sans-serif;
+  font-size: 12px;
+  color: #fcf9f9;
+  
+  
+}
+
+.sec1 .div1{
+  padding: 14px 16px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+
+}
+.sec1 .div1 h1{
+  font-size: 120px;
+}
+
+.span{
+  display: flex;
+  gap: 50px;
+  
+}
+  .button{
+    background-color: #C271FF;
+    border-radius: 40px;
+    padding: 20px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    
+  }
+
+
+
+
+
+
+
+
+
+  .sec1 .div2{
+  display: flex; /* 1. Attiva la modalità Flexbox */
+  
+  justify-content: center; /* 2. Spinge il logo a sx e la lista a dx */
+
+  align-items: center; /* 3. Allinea tutto al centro in verticale */
+
+}
+
+
+.div2{
+  display: block;
+  color: #0a0a0a;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Source Sans Pro black', sans-serif;
+  font-size: 12px;
+  color: #fcf9f9;
+  
+  
+}
+
+.sec1 .div2{
+  padding: 14px 16px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+
+}
+.sec1 .div2 h2{
+  margin-top: 100px;
+  font-size: 35px;
+  gap: 40px;
+  font-family: 'Source Sans Pro light', sans-serif;
+}
+
+
+.sp{
+  color: #C271FF;
+}
+
+
+
+
+.sec1 .div3{
+  display: flex; /* 1. Attiva la modalità Flexbox */
+  
+  justify-content: center; /* 2. Spinge il logo a sx e la lista a dx */
+
+  align-items: center; /* 3. Allinea tutto al centro in verticale */
+
+}
+
+
+.div3{
+  display: block;
+  color: #0a0a0a;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Source Sans Pro black', sans-serif;
+  font-size: 12px;
+  color: #fcf9f9;
+  
+  
+}
+
+.sec1 .div3{
+  padding: 14px 16px;
+  display: flex;
+  gap: 58px;
+  flex-direction: row;
+  align-items: baseline;
+  font-size: 12px;
+}
+
+.sec1 .div3 h3{
+  font-size: 16px;
+}
+.sec1 .div3 h3 p{
+  font-size: 10px;
+  font-family: 'Source Sans Pro italic', sans-serif;
 }
