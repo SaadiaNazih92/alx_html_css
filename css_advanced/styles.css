@@ -5,23 +5,35 @@
   /* Correzione: Il percorso punta a un file .otf, quindi il formato è "opentype" */
   src: url('fonts/SourceSansPro-Black.otf') format('opentype');
 }
+header {
+  position: fixed; /* La "fissa" alla finestra del browser */
+  top: 0;          /* La posiziona a 0 pixel dal bordo superiore */
+  left: 0;         /* La posiziona a 0 pixel dal bordo sinistro */
+  width: 100%;     /* Le dice di occupare tutta la larghezza dello schermo */
+  z-index: 1000;
+}
 
 body {
-  background-image: url(./images/Object.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  
   /*
    * QUESTA È LA REGOLA PRINCIPALE CHE CERCAVI
    * Tutti i paragrafi e gli altri testi ora useranno questo font di default.
   */
   font-family: 'Source Sans Pro Regular', sans-serif;
   /* Puoi aggiungere anche altri stili di base qui */
-  color: #0a0a0a; /* Un colore di testo standard più morbido del nero puro */
+  color: #fffbfb; /* Un colore di testo standard più morbido del nero puro */
   line-height: 1.6; /* Aumenta lo spazio tra le righe per una migliore leggibilità */
   margin: 0;
   padding: 0;
+}
+
+
+.sec1{
+  background-image: url(./images/Object.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 nav {
@@ -49,7 +61,7 @@ ul li {
 }
 ul li a{
   display: block;
-  color: #0a0a0a;
+  color: #ffffff;
   text-align: right;
   text-decoration: none;
   padding: 14px 16px;
@@ -80,7 +92,7 @@ ul li:hover{
 
 .div1{
   display: block;
-  color: #0a0a0a;
+  color: #fcfcfc;
   text-align: center;
   text-decoration: none;
   font-family: 'Source Sans Pro black', sans-serif;
@@ -139,7 +151,7 @@ ul li:hover{
 
 .div2{
   display: block;
-  color: #0a0a0a;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-family: 'Source Sans Pro black', sans-serif;
@@ -185,7 +197,7 @@ ul li:hover{
 
 .div3{
   display: block;
-  color: #0a0a0a;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   font-family: 'Source Sans Pro black', sans-serif;
@@ -210,4 +222,48 @@ ul li:hover{
 .sec1 .div3 h3 p{
   font-size: 10px;
   font-family: 'Source Sans Pro italic', sans-serif;
+}
+
+.sec2 {
+  background-color: #C271FF;
+  display: flex; 
+  
+  justify-content: space-evenly; 
+
+  align-items: center; 
+  padding: 50px;
+
+}
+
+.sec2 img{
+ border-radius: 100px;
+}
+
+.sec3 h3 {
+  display: block;
+  color: #fffefe;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Source Sans Pro black', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  
+  
+}
+.sec3 p {
+  display: block;
+  color: #fffefe;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Source Sans Pro regular', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  
+  
+}
+
+.sec3 blockquote,
+.sec3 h3,
+.sec3 p {
+  margin: 0;
 }
