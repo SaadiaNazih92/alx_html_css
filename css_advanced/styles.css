@@ -1,28 +1,21 @@
 @font-face {
-  /* Consiglio: Usa un nome chiaro e descrittivo */
   font-family: 'Source Sans Pro Black';
-
-  /* Correzione: Il percorso punta a un file .otf, quindi il formato è "opentype" */
   src: url('fonts/SourceSansPro-Black.otf') format('opentype');
 }
+
+
 header {
-  position: fixed; /* La "fissa" alla finestra del browser */
-  top: 0;          /* La posiziona a 0 pixel dal bordo superiore */
-  left: 0;         /* La posiziona a 0 pixel dal bordo sinistro */
-  width: 100%;     /* Le dice di occupare tutta la larghezza dello schermo */
+  position: fixed; 
+  top: 0;          
+  left: 0;         
+  width: 100%;     
   z-index: 1000;
 }
 
 body {
-  
-  /*
-   * QUESTA È LA REGOLA PRINCIPALE CHE CERCAVI
-   * Tutti i paragrafi e gli altri testi ora useranno questo font di default.
-  */
   font-family: 'Source Sans Pro Regular', sans-serif;
-  /* Puoi aggiungere anche altri stili di base qui */
-  color: #fffbfb; /* Un colore di testo standard più morbido del nero puro */
-  line-height: 1.6; /* Aumenta lo spazio tra le righe per una migliore leggibilità */
+  color: #fffbfb; 
+  line-height: 1.6; 
   margin: 0;
   padding: 0;
 }
@@ -67,7 +60,6 @@ ul li a{
   padding: 14px 16px;
   font-family: 'Source Sans Pro black', sans-serif;
   font-size: 12px;
-  color: #fcf9f9;
   
   
 }
@@ -81,11 +73,11 @@ ul li:hover{
 
  .sec1 .div1{
   background-color: transparent;
-  display: flex; /* 1. Attiva la modalità Flexbox */
+  display: flex; 
   
-  justify-content: center; /* 2. Spinge il logo a sx e la lista a dx */
+  justify-content: center; 
 
-  align-items: center; /* 3. Allinea tutto al centro in verticale */
+  align-items: center; 
 
 }
 
@@ -97,7 +89,7 @@ ul li:hover{
   text-decoration: none;
   font-family: 'Source Sans Pro black', sans-serif;
   font-size: 12px;
-  color: #fcf9f9;
+  
   
   
 }
@@ -131,14 +123,6 @@ ul li:hover{
     
   }
 
-
-
-
-
-
-
-
-
   .sec1 .div2{
   display: flex; /* 1. Attiva la modalità Flexbox */
   
@@ -156,7 +140,7 @@ ul li:hover{
   text-decoration: none;
   font-family: 'Source Sans Pro black', sans-serif;
   font-size: 12px;
-  color: #fcf9f9;
+  
   
   
 }
@@ -202,7 +186,7 @@ ul li:hover{
   text-decoration: none;
   font-family: 'Source Sans Pro black', sans-serif;
   font-size: 12px;
-  color: #fcf9f9;
+  
   
   
 }
@@ -246,7 +230,7 @@ ul li:hover{
   text-decoration: none;
   font-family: 'Source Sans Pro black', sans-serif;
   font-size: 22px;
-  color: #ffffff;
+  
   
   
 }
@@ -257,7 +241,7 @@ ul li:hover{
   text-decoration: none;
   font-family: 'Source Sans Pro regular', sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  
   
   
 }
@@ -267,3 +251,144 @@ ul li:hover{
 .sec3 p {
   margin: 0;
 }
+.popular-tutorials {
+  text-align: center; /* Centra il titolo h2 */
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Sfondo leggermente grigio per la sezione */
+}
+
+
+/* Stile generale della sezione */
+.sec4 {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f9fa; /* Sfondo leggero per la sezione */
+}
+
+.sec4 h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #100f0f;
+  font-family: 'Source Sans Pro light', sans-serif;
+}
+
+.sec4 h2 span {
+  color: #C271FF; 
+}
+
+
+.div4 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;       
+  gap: 30px;               
+}
+
+/* Stile della singola card */
+.tutorial-card {
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    color: rgb(1, 1, 1);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.card-thumbnail {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+
+.card-content {
+  padding-top: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.card-content > p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.5;
+  
+}
+
+/* Sezione Autore (avatar + nome) */
+.card-author {
+  display: flex;
+  align-items: center; /* Allinea verticalmente avatar e nome */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Rende l'avatar rotondo */
+ 
+}
+
+.card-author h4 {
+  font-size: 0.9rem;
+  color: #C271FF;
+  font-weight: bold;
+}
+
+/* Parte finale della card (stelle + durata) */
+.card-footer {
+  display: flex;
+  justify-content: space-between; /* Spinge i due elementi ai lati opposti */
+  align-items: center;
+  border-top: 1px solid #e9ecef; /* Linea di separazione sottile */
+  padding-top: 15px;
+}
+
+.card-rating {
+  color: #C271FF;
+}
+
+.card-duration {
+  font-size: 0.9rem;
+  color: #C271FF;
+  font-weight: bold;
+  margin: 0; /* Rimuove il margine di default del paragrafo */
+}
+
+/* Stile base della card modificato */
+.tutorial-card {
+  width: 270px;
+  height: 500px; /* Diamo un'altezza fissa */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative; /* Necessario per l'overlay */
+  color: rgb(1, 1, 1); /* Testo bianco per contrasto con lo sfondo scuro */
+
+  /* Impostazioni comuni dello sfondo */
+  background-size: cover;
+  background-position: center;
+
+  /* Mettiamo la card stessa in modalità flex per allineare il contenuto */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Allinea il contenuto in basso */
+}
+
+/* Stile per il contenuto, ora senza padding laterale fisso */
+.card-content {
+  padding: 1px;
+  z-index: 2; /* Si assicura che il testo stia sopra l'overlay */
+ 
+}
+
