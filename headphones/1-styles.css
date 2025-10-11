@@ -1,0 +1,240 @@
+/* ======================= IMPOSTAZIONI GLOBALI E VARIABILI ======================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #FF6565; 
+    --color-white: #FFFFFF;
+    --font-family-base: 'Source Sans Pro', sans-serif; 
+    --max-width: 1000px; 
+  --sans-serif-font: 'Source Sans Pro', sans-serif; /* Un font sans-serif pulito */
+  --heading-font: 'Lobster', sans-serif; /* Il tuo font per i titoli */
+  --ctn-btn-border-radius: 28px;
+}
+
+body {
+  font-family: var(--sans-serif-font);
+  text-align: center;
+  background-color: #f0f4f8; /* Un grigio chiaro per lo sfondo generale */
+  color: var(--color-white);
+  line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 20px;
+    padding-right: 20px; 
+}
+
+
+/*  Stili dell'Header e Hero  */
+
+.header-hero {
+    background-image: url('images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 800px;
+}
+
+/* Navigazione */
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px; 
+}
+
+.nav-links a {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: var(--color-primary); 
+}
+
+
+/* Contenuto Hero */
+.hero-content {
+    text-align: center;
+    padding-top: 250px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9; /* Opacità al passaggio del mouse */
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+@media (max-width: 480px) {
+    .header-hero {
+        /* Usa un'immagine di sfondo diversa per il mobile */
+        background-image: url('images/headphones_hero_2.jpg');
+        min-height: 650px;
+    }
+
+    .nav-links {
+        display: none; 
+    }
+
+    
+
+    .navbar {
+        justify-content: center; 
+    }
+
+    .hero-content {
+        padding-top: 200px;
+    }
+
+    .hero-title {
+        font-size: 28px;
+    }
+}
+
+
+/* Associa ogni classe al carattere specifico (questo è il trucco!) */
+.holberton_school-icon-ic_sound:before {
+  content: "\e90e";
+}
+.holberton_school-icon-ic_video:before {
+  content: "\e910";
+}
+.holberton_school-icon-ic_music:before {
+  content: "\e90d";
+}
+.holberton_school-icon-ic_hearing:before {
+  content: "\e909";
+}
+
+
+/*  Stili Sezione "Cosa facciamo..."  */
+
+.what-we-do {
+    padding: 100px 0;
+    background-color: var(--color-white); 
+    color: #071629; /* Testo scuro */
+}
+
+
+.section-header {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 80px auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Stili della griglia */
+.grid-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Spazio tra gli elementi della griglia */
+}
+
+.grid-item {
+    text-align: center;
+    flex: 1; /* Fa in modo che ogni elemento occupi lo stesso spazio */
+    max-width: 210px;
+}
+
+.grid-item [class^="holberton_school-icon-"] {
+    font-size: 60px; /* Dimensione dell'icona */
+    color: var(--color-primary); /* Colore primario per l'icona */
+    margin-bottom: 30px;
+    display: block;
+}
+
+.grid-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.grid-item p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+@media (max-width: 480px) {
+    
+    .section-title {
+        font-size: 28px;
+    }
+
+    
+    .grid-container {
+        flex-direction: column;
+        align-items: center; 
+        gap: 60px;
+    }
+}
